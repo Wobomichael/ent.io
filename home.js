@@ -47,7 +47,7 @@ window.addEventListener("load", () => {
     setTimeout(() => {
       document.querySelector(".loading").style.display = "none";
     }, 1800)
-  }
+  }  return document.querySelector(".loading").style.display = "none";
 });
 
 document.querySelector('.logo').addEventListener('click', function() {
@@ -61,6 +61,7 @@ document.querySelector('.logo').addEventListener('click', function() {
 //     fasbar.classList.toggle('fa-bars');
 //     fasbar.classList.toggle('fa-times');
 // }
+
 
 
 
