@@ -1,0 +1,178 @@
+#search {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: row-reverse;
+  height: 30px;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid beige;
+  width: 90vw;
+  justify-self: center;
+  background-color: rgb(33, 33, 33);
+  align-items: center;
+
+}
+
+#search input {
+  flex-grow: 1;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 10px;
+  color: beige;
+}
+
+#search button {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  padding: 0;
+  width: 40px;
+}
+.explore {
+  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-top: 10px;
+}
+.explore .genre {
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(1000px);
+  justify-items: center;
+  align-content: center;
+  border-radius: 10px;
+  background-blend-mode: color;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.explore .genre:hover {
+  transform: scale(1.05);
+}
+
+.explore-header {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.explore-header h2 {
+  font-size: 2rem;
+  color: beige;
+  margin-bottom: 10px;
+}
+
+.explore-header p {
+  font-size: 1rem;
+  color: rgba(245, 245, 220, 0.7);
+}
+
+.search-container {
+  margin: 20px auto !important;
+}
+
+.filters {
+  padding: 20px;
+  text-align: center;
+}
+
+.filters h3 {
+  color: beige;
+  margin-bottom: 15px;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 8px 20px;
+  background-color: rgba(50, 50, 50, 0.8);
+  color: rgba(245, 245, 220, 0.7);
+  border: 1px solid rgba(217, 204, 193, 0.3);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-color: transparent;
+}
+
+.trending-section {
+  padding: 40px 20px;
+  margin-bottom: 80px;
+}
+
+.trending-section h2 {
+  font-size: 1.8rem;
+  color: beige;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.trending-books {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.book-card {
+  background-color: rgba(33, 33, 33, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(217, 204, 193, 0.2);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.book-card:hover {
+  border-color: rgba(217, 204, 193, 0.5);
+  background-color: rgba(50, 50, 50, 0.8);
+  transform: translateY(-5px);
+}
+
+.book-cover {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(100, 100, 100, 0.3);
+  border-radius: 8px;
+}
+
+.book-card h4 {
+  color: beige;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.book-card p {
+  color: rgba(245, 245, 220, 0.6);
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.btn-view {
+  padding: 8px 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-view:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}

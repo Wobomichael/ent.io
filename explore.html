@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./home.css" />
+    <link rel="stylesheet" href="./explore.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    
+    <main class="loading">
+      <!-- <img class="logo" src="./images/CampusCart.png" alt="" /> -->
+      <h1 style="font-size: 3rem">Campu<span>Cart</span></h1>
+    </main>
+
+    <main id="main">
+      <nav id="nav" class="navbar">
+        <div class="logo">Campus<span>Cart</span></div>
+        <ul class="nav-links">
+          <li id="one"><a href="./home.html">Home</a></li>
+          <li id="three"><a href="./explore.html">Explore</a></li>
+          <li id="four">
+            <a href="#" onclick="openModal('authModal')">Sell Books</a>
+          </li>
+          <button class="btn-primary" onclick="openModal('authModal')">
+            Join Now
+          </button>
+        </ul>
+        <i id="fasbar" class="fas fa-bars" onclick="fas()"></i>
+      </nav>
+
+      <main class="content">
+        <section class="explore-header">
+          <h2>Explore Educational Books</h2>
+          <p>Discover thousands of educational resources across all subjects</p>
+        </section>
+
+        <search id="search" class="search-container">
+          <input
+            type="search"
+            placeholder="Search by title, author, or subject..."
+          />
+          <button class="searchbtn">
+            <i class="fas fa-search" style="color: beige;"></i>
+          </button>
+        </search>
+
+        <section class="filters">
+          <h3>Filter by:</h3>
+          <div class="filter-buttons">
+            <button class="filter-btn active">All</button>
+            <button class="filter-btn">Sciences</button>
+            <button class="filter-btn">Arts</button>
+            <button class="filter-btn">Most Popular</button>
+          </div>
+        </section>
+
+        <div class="explore">
+          <div
+            class="genre"
+            style="
+              background: rgba(0, 0, 0, 0.8) url('https://t3.ftcdn.net/jpg/02/38/08/42/240_F_238084232_5XhGUddDZezzJxybvVXzfPp8cOKAuqRp.jpg')
+                center/cover no-repeat;
+            "
+          >
+            <h3>MEDICAL & HEALTH SCIENCES</h3>
+          </div>
+          <div
+            class="genre"
+            style="
+              background: rgba(0, 0, 0, 0.8) url('https://t3.ftcdn.net/jpg/04/32/10/22/240_F_432102245_y4QUUtBhb4qEyRtB4tnCc4K0U1yW6uvv.jpg')
+                center/cover no-repeat;
+            "
+          >
+            <h3>AGRICULTURE</h3>
+          </div>
+          <div
+            class="genre"
+            style="
+              background: rgba(0, 0, 0, 0.8) url('https://t3.ftcdn.net/jpg/01/07/17/52/240_F_107175249_BYOKtVY86JqiuKRYgM2lyGy4lLrqwJoy.jpg')
+                center/cover no-repeat;
+            "
+          >
+            <h3>SCIENCES</h3>
+          </div>
+          <div
+            class="genre"
+            style="
+              background: rgba(0, 0, 0, 0.8)
+                url('https://t3.ftcdn.net/jpg/06/40/89/06/240_F_640890690_O4MAXucru5OYkFFPEcuxD4kruGLB7v8T.jpg') center/cover no-repeat;
+            "
+          >
+            <h3>SOCIAL SCIENCES</h3>
+          </div>
+          <div
+            class="genre"
+            style="
+              background: rgba(0, 0, 0, 0.8) url('https://t3.ftcdn.net/jpg/00/95/77/62/240_F_95776267_vDeuFxaKtFhMz307i75TC7Bs859nyDwk.jpg')
+                center/cover no-repeat;
+            "
+          >
+            <h3>ENGINEERING & TECHNOLOGY</h3>
+          </div>
+          <div
+            class="genre"
+            style="
+              background: rgba(0, 0, 0, 0.8) url('https://t4.ftcdn.net/jpg/03/62/43/83/240_F_362438386_YvWp1igNhSaFWydxWci539dA0FGa2bWR.jpg')
+                center/cover no-repeat;
+            "
+          >
+            <h3>ARTS AND HUMANITIES</h3>
+          </div>
+          <div
+            class="genre"
+            style="
+              background: rgba(0, 0, 0, 0.8) url('https://t4.ftcdn.net/jpg/03/68/82/97/240_F_368829743_FYSUUgYwPEKYrQvK7I4i09PP2XqqFcKL.jpg')
+                center/cover no-repeat;
+            "
+          >
+            <h3>EDUCATION</h3>
+          </div>
+          <div
+            class="genre"
+            style="
+              background: rgba(0, 0, 0, 0.8) url('https://t3.ftcdn.net/jpg/12/30/67/08/240_F_1230670857_xXJtJLKQqlh2wkktQGgxGhPhc0WjYR4a.jpg')
+                center/cover no-repeat;
+            "
+          >
+            <h3>MASS COMMUNICATION</h3>
+          </div>
+          <div
+            class="genre"
+            style="
+              background: rgba(0, 0, 0, 0.8)
+                url('https://t4.ftcdn.net/jpg/03/25/78/41/240_F_325784163_1f5hbVa4QrhZXgTPptj3HAbCRyOtdyuU.jpg') center/cover no-repeat;
+            "
+          >
+            <h3>PHILOSOPHY</h3>
+          </div>
+          <div
+            class="genre"
+            style="
+              background: rgba(0, 0, 0, 0.8) url('https://t4.ftcdn.net/jpg/05/31/86/87/240_F_531868724_pektmlyQH3s9jguLUgb1TplJUtgjifUd.jpg')
+                center/cover no-repeat;
+            "
+          >
+            <h3>PHYSICS</h3>
+          </div>
+          <div
+            class="genre"
+            style="
+              background: rgba(0, 0, 0, 0.8)
+                url('https://t4.ftcdn.net/jpg/00/94/46/39/240_F_94463900_kTSd8CtbmIYRuNrbWS7WxCpLDTizVuq5.jpg') center/cover no-repeat;
+            "
+          >
+            <h3>CHEMISTRY</h3>
+          </div>
+          <div
+            class="genre"
+            style="
+              background: rgba(0, 0, 0, 0.8) url('https://t4.ftcdn.net/jpg/08/46/44/11/240_F_846441198_l4pRtkrvNQdqJ6dOiKHTYyEmHp5eIzFX.jpg')
+                center/cover no-repeat;
+            "
+          >
+            <h3>ENVIRONMENTAL SCIENCE</h3>
+          </div>
+        </div>
+
+        <section class="trending-section">
+          <h2>Popular Educational Books</h2>
+          <div class="trending-books">
+            <div class="book-card">
+              <div class="book-cover">📕</div>
+              <h4>Introduction to Algorithms</h4>
+              <p>By Cormen, Leiserson & Rivest</p>
+              <button class="btn-view">View Details</button>
+            </div>
+            <div class="book-card">
+              <div class="book-cover">📗</div>
+              <h4>A Brief History of Time</h4>
+              <p>By Stephen Hawking</p>
+              <button class="btn-view">View Details</button>
+            </div>
+            <div class="book-card">
+              <div class="book-cover">📙</div>
+              <h4>The Elegant Universe</h4>
+              <p>By Brian Greene</p>
+              <button class="btn-view">View Details</button>
+            </div>
+            <div class="book-card">
+              <div class="book-cover">📔</div>
+              <h4>Sapiens</h4>
+              <p>By Yuval Noah Harari</p>
+              <button class="btn-view">View Details</button>
+            </div>
+          </div>
+        </section>
+      </main>
+    </main>
+
+    
+    <div id="authModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('authModal')">&times;</span>
+            <div class="form-container">
+                <div class="form-toggle">
+                    <button id="loginToggle" class="active" onclick="toggleForm('login')">Login</button>
+                    <button id="signupToggle" onclick="toggleForm('signup')">Sign Up</button>
+                </div>
+
+                <form id="loginForm">
+                    <h2>Welcome Back</h2>
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Password" required>
+                    <a href="#" class="forgotten" onclick="forgot()">Forgot Password?</a>
+                    <button type="submit" class="btn-submit">Sign In</button>
+                </form>
+
+                <form id="signupForm" class="hidden">
+                    <h2>Create Account</h2>
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Student Email" required>
+                    <select>
+                        <option value="student">I want to Buy</option>
+                        <option value="seller">I want to Sell</option>
+                    </select>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit" class="btn-submit">Get Started</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./home.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
