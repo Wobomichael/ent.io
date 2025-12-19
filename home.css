@@ -111,6 +111,8 @@ body {
     font-weight: bold;
     letter-spacing: 1px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 .logo:hover { transform: scale(1.1); transition: all 0.5s ease; }
 
@@ -451,6 +453,7 @@ input, select {
   
   
 }
+
 
 
 
