@@ -445,6 +445,10 @@ input, select {
         margin: 20px 0;
         border-bottom: 1px solid #ddd;
     }
+    .modal-content{
+      width: 350px;
+    }
   
   
 }
+
