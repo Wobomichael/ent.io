@@ -10,6 +10,7 @@ html{
 }
 
 body {
+    position: fixed;
     width: 100vw;
     height: 100vh;
     color: #fff;
@@ -240,7 +241,7 @@ input, select {
         position: fixed;
         top: 80px;
         right: 0;
-        width: 200px;
+        width: 50%;
         height: 100vh;
         background-color:rgb(43 43 42 / 90%);
         backdrop-filter: blur(10px);
@@ -269,6 +270,7 @@ input, select {
     }
 
 }
+
 
 
 
