@@ -64,6 +64,40 @@ document.querySelector('.logo').addEventListener('click', function() {
 //     fasbar.classList.toggle('fa-times');
 // }
 
+function filter(c) {
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.classList.remove('active');
+  });
+  document.querySelector(`.filter-btn.${c}`).classList.add('active');
+  if (c === 'all') {
+    document.querySelectorAll('.genre').forEach(genre => {
+      genre.style.display = 'block';
+    });
+  } else if (c === 'science') {
+    document.querySelectorAll('.genre').forEach(genre => {
+      genre.style.display = 'none';
+    });
+    document.querySelectorAll(`.genre.${c}`).forEach(genre => {
+      genre.style.display = 'block';
+    });
+  } else if (c === 'art') {
+    document.querySelectorAll('.genre').forEach(genre => {
+      genre.style.display = 'none';
+    });
+    document.querySelectorAll(`.genre.${c}`).forEach(genre => {
+      genre.style.display = 'block';
+    });
+  } else if (c === 'popular') {
+    document.querySelectorAll('.genre').forEach(genre => {
+      genre.style.display = 'none';
+    });
+    document.querySelectorAll(`.genre.${c}`).forEach(genre => {
+      genre.style.display = 'block';
+    });
+  }
+}
+
+
 
 
 
