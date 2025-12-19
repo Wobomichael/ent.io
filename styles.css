@@ -159,7 +159,7 @@ body {
 
 .modal-content {
     background: rgba(255, 255, 255, 0.95);
-    margin: 10% auto;
+    margin: 6% auto;
     padding: 40px;
     width: 400px;
     border-radius: 15px;
@@ -272,6 +272,7 @@ input, select {
     }
 
 }
+
 
 
 
