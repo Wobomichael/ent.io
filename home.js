@@ -52,8 +52,10 @@ window.addEventListener("load", () => {
   }
 });
 
-document.querySelector('.logo').addEventListener('click', function() {
-  window.location.href = './index.html';
+document.querySelectorAll('.logo').forEach(logo => {
+  logo.addEventListener('click', function() {
+    window.location.href = './index.html';
+  });
 });
 
 // function fas(){
@@ -96,6 +98,7 @@ function filter(c) {
     });
   }
 }
+
 
 
 
