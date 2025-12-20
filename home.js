@@ -42,7 +42,7 @@ document.addEventListener("scroll", () => {
 history.scrollRestoration = "auto";
 
 window.addEventListener("load", () => {
-  if (document.referrer === "https://wobomichael.github.io/ent.io/" || document.referrer.includes("index.html")) {
+  if (document.referrer === "https://wobomichael.github.io/ent.io/" || document.referrer === "wobomichael.github.io/ent.io/" || document.referrer.includes("index.html")) {
     document.querySelector(".loading").style.display = "flex";
     setTimeout(() => {
       document.querySelector(".loading").style.display = "none";
@@ -98,6 +98,7 @@ function filter(c) {
     });
   }
 }
+
 
 
 
