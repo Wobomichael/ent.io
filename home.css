@@ -450,9 +450,13 @@ input, select {
     .modal-content{
       width: 350px;
     }
+    .loading{
+      width: 70vw;
+    }
   
   
 }
+
 
 
 
